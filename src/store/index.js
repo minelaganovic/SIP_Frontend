@@ -79,6 +79,7 @@ export default new Vuex.Store({
 
                         localStorage.setItem("token", token);
                         axios.defaults.headers.common["Authorization"] = "Bearer  " + token;
+                        axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
                         commit("auth_success", {
                             token: token,
                             refreshToken: refreshToken,
