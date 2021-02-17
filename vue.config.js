@@ -1,5 +1,5 @@
 module.export = {
     devServer: {
-        proxy: "http://localhost:1088/"
+        proxy: "http://minela-001-site1.ftempurl.com/api/v1/"
     }
 }
